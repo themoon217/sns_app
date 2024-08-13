@@ -1,0 +1,461 @@
+/* styles.css */
+
+#wrap {
+	background: #000000;
+	border-radius: 24px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+	margin: 10px auto;
+	padding: 20px 14px 40px;
+	max-width: 300px;
+	width: 100%;
+	font-size: 14px;
+    text-align: center;/* テキスト中央ぞろえ */
+    white-space: nowrap; /* 改行しない */
+}
+
+body {
+	font-family: "Yu Gothic", YuGothic, Helvetica, Arial,
+	"Hiragino Gothic ProN", "ヒラギノ角ゴ ProN W3",
+	Meiryo, メイリオ, sans-serif;
+	background-color: #000000;
+    justify-content: center; /* 要素を水平方向に中央に配置 */
+      align-items: center;  /* 要素を垂直方向に中央に配置 */
+    height: 100vh;  /* 画面の高さいっぱいに要素を伸ばす */ 
+     color: #ff0000; 
+} 
+
+#head {
+	padding: 20px 20px 0 20px;
+}
+
+input[type="text"]{
+    width: 300px; /* 幅を指定して大きさを変更 */
+    padding: 15px 10px; /* 内側の余白を設定 */
+    border-radius: 6px; /* 角を丸くする */
+    border: 1px solid #bdbdbd; /* 枠線を追加 */
+}
+
+input[type="password"]{
+    width: 300px; /* 幅を指定して大きさを変更 */
+    padding: 15px 10px; /* 内側の余白を設定 */
+    border-radius: 6px; /* 角を丸くする */
+    border: 1px solid #bdbdbd; /* 枠線を追加 */
+}
+
+.custom-submit-button {
+	width: 320px;
+    padding: 18px 12px; 
+    background-color: #000000;
+	font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+	margin: 10px 0 50px 0;
+	transition: background-color 0.6s ease;
+}
+
+.custom-submit-button:hover {
+    background-color: #bbbbbb;
+}
+
+#custom-submit-button {
+display: block;
+    margin-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+#content {
+	padding: 0 50px;
+}
+
+.required {
+	background-color: #404040;
+	color: #ffffff;
+	font-size: 70%;
+	padding: 2px;
+	margin-left: 10px;
+}
+
+dt {
+	margin: 10px;
+}
+h1{
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* .no{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.yes{
+    color: #ff0000;
+    text-decoration: none;
+} */
+img {
+    width: 60%;
+    margin: auto;
+    display: block;
+    padding-top: 40px;
+  }
+
+
+
+
+/* ボタンここから */
+/* はいの場合 */
+  *,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-emergency-real {
+  position: relative;
+
+  display: block;
+
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+a.btn-emergency-real:hover .btn-emergency-real-top {
+  top: 10px;
+
+  height: 50px;
+}
+
+a.btn-emergency-real:active .btn-emergency-real-top {
+  top: 20px;
+
+  height: 40px;
+}
+
+.btn-emergency-real-top {
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  width: 160px;
+  height: 60px;
+  margin-top: 30px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0 0 50% 50%;
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#630909),
+    to(#d62d2d)
+  );
+  background-image: -webkit-linear-gradient(right, #630909 0%, #d62d2d 100%);
+  background-image: linear-gradient(to left, #630909 0%, #d62d2d 100%);
+  -webkit-box-shadow: inset 0 -1px 10px 0 rgba(0, 0, 0, 0.9),
+    0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 10px 0 rgba(0, 0, 0, 0.9),
+    0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-emergency-real-top:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+
+  width: 160px;
+  height: 60px;
+
+  content: "";
+
+  border-radius: 80px / 30px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#6c0c0b),
+    to(#ed4c4c)
+  );
+  background-image: -webkit-linear-gradient(bottom, #6c0c0b 0%, #ed4c4c 100%);
+  background-image: linear-gradient(to top, #6c0c0b 0%, #ed4c4c 100%);
+  -webkit-box-shadow: 0 10px 28px 2px rgba(0, 0, 0, 0.2),
+    inset 0 5px 10px 0 rgba(0, 0, 0, 0.2),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -2px 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -2px 10px 5px rgba(237, 76, 76, 0.6),
+    inset 5px 0 1px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 28px 2px rgba(0, 0, 0, 0.2),
+    inset 0 5px 10px 0 rgba(0, 0, 0, 0.2),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -2px 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -2px 10px 5px rgba(237, 76, 76, 0.6),
+    inset 5px 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.btn-emergency-real-top span {
+  font-size: 38px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -24px;
+  left: 0;
+
+  width: 100%;
+
+  -webkit-transform: scaleY(0.75);
+
+  transform: scaleY(0.75);
+  text-align: center;
+
+  color: #e48a8a;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+.btn-emergency-real-bottom {
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  width: 200px;
+  height: 80px;
+
+  border-radius: 100px / 40px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f2f2f2),
+    color-stop(48%, #b4b4b4),
+    to(#767676)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #f2f2f2 0%,
+    #b4b4b4 48%,
+    #767676 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    #f2f2f2 0%,
+    #b4b4b4 48%,
+    #767676 100%
+  );
+  -webkit-box-shadow: 0 8px 0 #c4cacc, inset 1px -1px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 0 #c4cacc, inset 1px -1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+/* ボタンここまで */
+
+
+
+/* ボタンここから */
+/* いいえの場合 */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-emergency-rea {
+  position: relative;
+
+  display: block;
+
+  width: 200px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+a.btn-emergency-rea:hover .btn-emergency-real-to {
+  top: 10px;
+
+  height: 50px;
+}
+
+a.btn-emergency-rea:active .btn-emergency-real-to {
+  top: 20px;
+
+  height: 40px;
+}
+
+.btn-emergency-real-to {
+  position: absolute;
+  top: 0;
+  left: 20px;
+
+  width: 160px;
+  height: 60px;
+  margin-top: 30px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0 0 50% 50%;
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#09630e),
+    to(#2dd63e)
+  );
+  background-image: -webkit-linear-gradient(right, #096316 0%, #2dd646 100%);
+  background-image: linear-gradient(to left, #096312 0%, #2dd643 100%);
+  -webkit-box-shadow: inset 0 -1px 10px 0 rgba(0, 0, 0, 0.9),
+    0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 10px 0 rgba(0, 0, 0, 0.9),
+    0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-emergency-real-to:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+
+  width: 160px;
+  height: 60px;
+
+  content: "";
+
+  border-radius: 80px / 30px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#0b6c1a),
+    to(#4ced57)
+  );
+  background-image: -webkit-linear-gradient(bottom, #0b6c13 0%, #4ced64 100%);
+  background-image: linear-gradient(to top, #126c0b 0%, #4ced54 100%);
+  -webkit-box-shadow: 0 10px 28px 2px rgba(0, 0, 0, 0.2),
+    inset 0 5px 10px 0 rgba(0, 0, 0, 0.2),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -2px 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -2px 10px 5px rgba(76, 237, 79, 0.6),
+    inset 5px 0 1px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 28px 2px rgba(0, 0, 0, 0.2),
+    inset 0 5px 10px 0 rgba(0, 0, 0, 0.2),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -2px 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -2px 10px 5px rgba(76, 237, 95, 0.6),
+    inset 5px 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.btn-emergency-real-to span {
+  font-size: 38px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -24px;
+  left: 0;
+
+  width: 100%;
+
+  -webkit-transform: scaleY(0.75);
+
+  transform: scaleY(0.75);
+  text-align: center;
+
+  color: #8ae497;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+.btn-emergency-real-botto {
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+  width: 200px;
+  height: 80px;
+
+  border-radius: 100px / 40px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f2f2f2),
+    color-stop(48%, #b4b4b4),
+    to(#767676)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #f2f2f2 0%,
+    #b4b4b4 48%,
+    #767676 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    #f2f2f2 0%,
+    #b4b4b4 48%,
+    #767676 100%
+  );
+  -webkit-box-shadow: 0 8px 0 #c4cacc, inset 1px -1px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 0 #c4cacc, inset 1px -1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+/* ボタンここまで */
+
+

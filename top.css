@@ -1,0 +1,102 @@
+/* top.css */
+
+body {
+    font-family: "Yu Gothic", YuGothic, Helvetica, Arial,
+        "Hiragino Gothic ProN", "ヒラギノ角ゴ ProN W3",
+        Meiryo, メイリオ, sans-serif;
+    background-color: rgb(135, 149, 178);
+    text-align: center;
+}
+
+.Login-button a  {
+    color: #471614; 
+    text-decoration: none; /* リンクの下線を削除 */
+    display: inline-flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    height: 36px;
+    border-radius: 500px;
+    padding: 12px;
+    align-items: center;
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 7px;
+}
+
+.Login-button :hover {
+    background-color: #e0eaff;
+}
+
+.Registration-button a {
+    color: #c2c2c2; /* 文字色を白色に設定 */
+    text-decoration: none; /* リンクの下線を削除 */
+    display: inline-flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    height: 36px;
+    border-radius: 500px;
+    padding: 12px;
+    align-items: center;
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #471614;
+    margin: 0 7px;
+}
+
+.Registration-button :hover {
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    padding: 12px;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0; /* 右端に配置 */
+    text-align: right; /* 子要素を右寄せにする */
+    z-index: 1;
+}
+
+header {
+    display: flex; /* 親要素をフレックスコンテナにする */
+    justify-content: center; /* 子要素を中央に配置 */
+    align-items: center; /* 子要素を垂直方向に中央に配置 */
+    height: 100vh; /* 画面の高さいっぱいに要素を伸ばす */
+}
+#head {
+    text-align: center; /* 子要素を中央に配置 */
+}
+
+h1 {
+    font-size: 52px;
+    margin: 0 auto;
+    color: #471614;
+}
+
+h3 {
+    color: #471614;
+}
+
+#head h1, #head h3 ,.Login-button ,.Registration-button {
+    opacity: 0; /* 最初は非表示にする */
+    animation: fadeIn 10s ease forwards; /* フェードインのアニメーションを設定 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* 非表示状態 */
+    }
+    to {
+        opacity: 1; /* 完全に表示された状態 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header #head h1 {
+      font-size: 35px; /* 適切なサイズに調整 */
+    }
+}

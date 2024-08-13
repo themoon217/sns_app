@@ -1,0 +1,158 @@
+/* styles.css */
+
+#wrap {
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 24px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+	margin: 15px auto;
+	padding: 10px;
+	max-width: 500px;
+	width: 100%;
+	font-size: 17px;
+}
+
+body {
+	font-family: "Yu Gothic", YuGothic, Helvetica, Arial,
+		"Hiragino Gothic ProN", "ヒラギノ角ゴ ProN W3",
+		Meiryo, メイリオ, sans-serif;
+	color: #471614;
+	/* background-color: #f6f6f6; */
+	background-color: rgb(135, 149, 178);
+	justify-content: center;
+	/* 要素を水平方向に中央に配置 */
+	align-items: center;
+	/* 要素を垂直方向に中央に配置 */
+	height: 100vh;
+	/* 画面の高さいっぱいに要素を伸ばす */
+}
+
+#head {
+	padding: 0 20px;
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 300px;
+	/* 幅を指定して大きさを変更 */
+	padding: 15px 10px;
+	/* 内側の余白を設定 */
+	border-radius: 6px;
+	/* 角を丸くする */
+	border: 1px solid #bdbdbd;
+	/* 枠線を追加 */
+}
+
+input[type="password"] {
+	width: 300px;
+	/* 幅を指定して大きさを変更 */
+	padding: 15px 10px;
+	/* 内側の余白を設定 */
+	border-radius: 6px;
+	/* 角を丸くする */
+	border: 1px solid #bdbdbd;
+	/* 枠線を追加 */
+}
+
+#upload {
+    text-align: center;
+}
+
+#fileAlert {
+	color: red;
+}
+
+
+.custom-submit-button {
+	width: 320px;
+	padding: 18px 12px;
+	background-color: #471614;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	margin: 10px 0 20px 0;
+	transition: background-color 0.6s ease;
+}
+
+
+.custom-submit-button:hover {
+	background-color: #bbbbbb;
+}
+
+#custom-submit-button {
+	display: block;
+	margin-inline-start: 40px;
+	unicode-bidi: isolate;
+}
+
+#custom-submit-button-login {
+	display: block;
+	margin-inline-start: 30px;
+	unicode-bidi: isolate;
+}
+
+#content {
+	padding: 0 50px;
+}
+
+.required {
+	background-color: #471614;
+	color: #ffffff;
+	font-size: 70%;
+	padding: 2px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+dt {
+	margin: 10px;
+}
+
+p {
+	text-align: center;
+}
+
+.error {
+	color: red;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.align_left {
+	padding-left: 1em;
+}
+
+.thick_font {
+	font-weight: 700;
+}
+
+@media(max-width: 767px) {
+	#lead {
+		font-size: 15px;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 60vw;
+		max-width: 100%;
+	}
+
+	#wrap {
+		max-width: 90%;
+
+	}
+
+	#content {
+		padding: 0 5%;
+	}
+
+	.custom-submit-button {
+		max-width: 100%;
+		width: 60vw;
+	}
+
+	.error {
+		font-size: 15px;
+	}
+}

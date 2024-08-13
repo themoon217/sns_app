@@ -1,0 +1,255 @@
+/* itiran.css */
+
+#wrap {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+    margin: 100px auto;
+    padding: 20px 14px 40px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 14px;
+}
+
+body {
+    font-family: "Yu Gothic", YuGothic, Helvetica, Arial,
+        "Hiragino Gothic ProN", "ヒラギノ角ゴ ProN W3",
+        Meiryo, メイリオ, sans-serif;
+    background-color: rgb(135, 149, 178);
+    justify-content: center;
+    /* 要素を水平方向に中央に配置 */
+    align-items: center;
+    /* 要素を垂直方向に中央に配置 */
+    height: 100vh;
+    /* 画面の高さいっぱいに要素を伸ばす */
+}
+
+/* #head {
+	padding: 20px 20px 0 20px;
+} */
+
+
+
+.required {
+    background-color: #404040;
+    color: #ffffff;
+    font-size: 70%;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+dt {
+    margin: 10px;
+}
+
+/* 一覧画像 */
+.itiran_gazou {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 背景透過 */
+.msg {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+    margin: 30px auto;
+    padding: 20px 14px 40px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* 画像投稿ユーザーアイコン表示 */
+.icon {
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+p.name {
+    padding: 12px 20px 0 50px;
+}
+
+/* テキストエリア */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#upload {
+    text-align: center;
+}
+
+#fileAlert {
+    color: red;
+}
+
+dt {
+    text-align: center;
+}
+
+
+/* こうの追加分 */
+
+body {
+    color: #471614;
+}
+
+.Login-button a {
+    color: #471614;
+    text-decoration: none;
+    /* リンクの下線を削除 */
+    display: inline-flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    height: 36px;
+    border-radius: 500px;
+    padding: 12px;
+    align-items: center;
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 7px;
+}
+
+.Login-button :hover {
+    background-color: #e0eaff;
+}
+
+.taikai-button a {
+    color: #c2c2c2;
+    /* 文字色を白色に設定 */
+    text-decoration: none;
+    /* リンクの下線を削除 */
+    display: inline-flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    height: 36px;
+    border-radius: 500px;
+    padding: 12px;
+    align-items: center;
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #471614;
+    margin: 0 7px;
+}
+
+.taikai-button :hover {
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    padding: 12px;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* 右端に配置 */
+    text-align: right;
+    /* 子要素を右寄せにする */
+    z-index: 1;
+}
+
+.cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 23px;
+    margin: 10px;
+    color: #471614;
+}
+
+.message {
+    text-align: center;
+}
+
+/* 以下シェアボタン */
+.custom-submit-button {
+    width: 100%;
+    padding: 18px 12px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #471614;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px 0 20px 0;
+    transition: background-color 0.6s ease;
+    font-weight: bold;
+}
+
+.custom-submit-button:hover {
+    background-color: #8795b2;
+}
+
+.move {
+    margin: 30px 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.back-to-previous,
+.past-record {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0 20px 0;
+}
+
+
+@media(max-width: 767px) {
+
+    /* テキストエリア */
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .msg {
+        max-width: 90%;
+    }
+
+    #wrap {
+        width: 90%;
+        padding: 20px 10px 40px;
+        margin: 80px auto;
+    }
+
+}
+
+/* こうの書き加えました！！ */
+
+.message {
+    margin: 30px 0;
+}
+
+.message h2 {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+.message h2 {
+    font-size: 18px; /* スマートフォン用のテキストサイズに変更 */
+}
+}
